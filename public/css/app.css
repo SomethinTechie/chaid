@@ -207,7 +207,7 @@ label {
 	width: 100%;
 	align-items: center;
 	justify-content: space-between;
-	box-shadow: 0 .1px 1px rgba(000, 000, 000, .3);
+	border-bottom: solid .1px rgba(000, 000, 000, .6);
 	padding: 10px 0;
 	opacity: .6
 }
@@ -357,10 +357,14 @@ footer {
 }
 .service-nav a {
 	opacity: .5;
+	font-size: 14px;
 }
 .service-nav a {
 	padding-right: 20px;
 	color: #fff;
+}
+.service-nav a:hover {
+	opacity: 1;
 }
 .service-nav a.active {
 	opacity: 1;
