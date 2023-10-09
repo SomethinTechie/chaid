@@ -15,12 +15,12 @@ app.use(express.static(__dirname + "/public"));
 app.use(expressLayouts);
 app.set("view engine", "ejs");
 
-// app.use('/', require('./routes/index'))
-app.get('/', (req, res) => {
-	res.status(200).json({
-		message: 'Hello, World!'
-	});
-});
+app.use('/', require('./routes/index'))
+// app.get('/', (req, res) => {
+// 	res.status(200).json({
+// 		message: 'Hello, World!'
+// 	});
+// });
 
 
 
