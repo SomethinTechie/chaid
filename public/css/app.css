@@ -378,6 +378,7 @@ footer {
 }
 .solution {
 	padding: 40px;
+	height: 320px;
 	border: solid .1px #eee;
 }
 .solution p {
