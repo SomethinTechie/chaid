@@ -13,6 +13,9 @@ router.get('/academy', homeController.academy)
 router.get('/support-services', homeController.supportServices)
 router.get('/operational-services', homeController.operationalServices)
 router.get('/educational-services', homeController.educationalServices)
+router.get('/faqs', homeController.faqs)
+router.get('/application', homeController.application)
+router.get('/investors', homeController.investors)
 
 router.get('/api/hello', (req, res) => {
   res.json({ message: 'Hello, world!' });
