@@ -72,9 +72,22 @@ exports.faqs = async (req, res) => {
 };
 
 exports.application = async (req, res) => {
-	res.render("./application", { layout: "./layouts/homeLayout", title: "FAQs" });
+	res.render("./application", {
+		layout: "./layouts/homeLayout",
+		title: "FAQs",
+	});
 };
 
 exports.investors = async (req, res) => {
-	res.render("./investors", { layout: "./layouts/homeLayout", title: "Investors" });
+	res.render("./investors", {
+		layout: "./layouts/homeLayout",
+		title: "Investors",
+	});
+};
+
+exports.mentors = async (req, res) => {
+	res.render("./mentors", {
+		layout: "./layouts/homeLayout",
+		title: "Mentors",
+	});
 };
