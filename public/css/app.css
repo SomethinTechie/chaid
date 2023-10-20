@@ -275,6 +275,10 @@ footer {
 	border-radius: 10px;
 	border: solid .1px #eee;
 	float: left;
+	display: none
+}
+.ui-testimonial.active {
+	display: block;
 }
 .ui-testimonial p {
 	display: block;
@@ -400,6 +404,44 @@ footer {
 .solution p {
 	opacity: .6;
 	font-size: 14px;
+}
+.chevron {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	float: left;
+	background: #01263a;
+	color: #fff;
+	margin: 1px;
+	cursor: pointer;
+}
+h1 {
+	position: relative;
+}
+.bi-plus {
+	width: 30px;
+	height: 30px;
+	border-radius: 40px;
+	background: #01263a;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.filter {
+	position: relative;
+	background-position: center;
+	background-size: cover;
+}
+.filter:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #01263a;
+	opacity: .8;
 }
 .faqs {
 	width: 100%;

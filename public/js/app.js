@@ -25,3 +25,18 @@ setInterval(function() {
 		firstSlide.addClass('active')
 	}
 },4000)
+
+function changeTestimony(req) {
+	console.log(req)
+	const currentTestimony = $('.ui-testimonial.active')
+	const nextTestimony = currentTestimony.next()
+	const prevTestimony = currentTestimony.prev()
+
+	if (nextTestimony.length > 0 && req.direction === 'right') {
+		currentTestimony.removeClass('active')
+		nextTestimony.addClass('active')
+	} else {
+		currentTestimony.removeClass('active')
+		prevTestimony.addClass('active')
+	}
+}
