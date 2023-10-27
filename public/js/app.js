@@ -1,3 +1,10 @@
+const links = document.getElementsByTagName("a");
+for (var i = 0; i < links.length; i++) {
+	if (links[i].getAttribute("href") === window.location.pathname) {
+		links[i].classList.add("active");
+	}
+}
+
 $(window).on('scroll', function() {
 	console.log()
 	if ($('html').scrollTop() >= "120") {
@@ -39,4 +46,9 @@ function changeTestimony(req) {
 		currentTestimony.removeClass('active')
 		prevTestimony.addClass('active')
 	}
+}
+
+function showDropdownNav() {
+	window.event.target.classList.remove
+	$('.dropwon-nav').slideToggle('show')
 }
