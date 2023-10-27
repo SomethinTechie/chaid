@@ -508,6 +508,9 @@ h1 {
 .dropwon-nav.show {
 	display: block;
 }
+.bi-list {
+	display: none;
+}
 
 
 
@@ -625,6 +628,9 @@ h1 {
 	.academy p {
 		opacity: .6;
 		padding: 20px 0;
+	}
+	.bi-list {
+		display: block;
 	}
 }
 
